@@ -7,8 +7,8 @@
             <div class="card">
                 <div class="card-header">{{ __('Register') }}</div>
                 {!! Form::open() !!}
-                    {{ Form::email('email')}}
-                    {{ Form::password('password')}}
+                    {{ Form::email('email','',['placeholder' => 'Email'])}}
+                    {{ Form::password('password',['placeholder' => 'Password'])}}
                     {{ Form::select('type', array(
                         'Student','Tutor'))}}
                     {{ Form::submit('Register')}}
